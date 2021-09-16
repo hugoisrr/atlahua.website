@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
 import { GiWaterSplash } from 'react-icons/gi';
@@ -15,27 +14,22 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <Link href='/'>
-        <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-          <GiWaterSplash size='3rem' /> <span>Atlahua</span>
-        </a>
-      </Link>
+      <a
+        style={{ display: 'flex', alignItems: 'center', color: 'white' }}
+        href='/'
+      >
+        <GiWaterSplash size='3rem' /> <span>Atlahua</span>
+      </a>
     </Div1>
     <Div2>
       <li>
-        <Link href='#projects'>
-          <NavLink>Projects</NavLink>
-        </Link>
+        <NavLink href='#projects'>Projects</NavLink>
       </li>
       <li>
-        <Link href='#tech'>
-          <NavLink>Technologies</NavLink>
-        </Link>
+        <NavLink href='#tech'>Technologies</NavLink>
       </li>
       <li>
-        <Link href='#about'>
-          <NavLink>About</NavLink>
-        </Link>
+        <NavLink href='#about'>About</NavLink>
       </li>
     </Div2>
     <Div3>

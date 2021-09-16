@@ -7,7 +7,6 @@ import {
 } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
-import Link from 'next/link';
 
 const Hero = (props) => (
   <>
@@ -23,9 +22,9 @@ const Hero = (props) => (
           </span>{' '}
           - Paul Arden
         </SectionText>
-        <Link href='#about'>
+        <a href='#about'>
           <Button>Learn More</Button>
-        </Link>
+        </a>
       </LeftSection>
     </Section>
   </>
